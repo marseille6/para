@@ -50,7 +50,7 @@ MPI_Reduce(&mypi,&pi,1,MPI_DOUBLE,MPI_SUM,0,MPI_COMM_WORLD);
                printf("pi is approximately %.16f, Error is %.16f\n",
     pi, fabs(pi - PI25DT));
 endwtime = MPI_Wtime();
-printf("wall clock time = %f\n", endwtime-startwtime);​    
+printf("wall clock time = %f\n", endwtime-startwtime);
     }
        }
    }
