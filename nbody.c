@@ -16,7 +16,7 @@ __device__ void compute_force(int threadIdx,ball* balls,int r,int GM){
             double dy = balls[i].py - balls[threadIdx].py;
             double d = dx * dx + dy * dy;
             if (d < r * r) d = r * r;
-            d *= sqrt[[[lll(d);
+            d *= sqrt(d);
             balls[threadIdx].ax += GM * dx / d;
             balls[threadIdx].ay += GM * dy / d;
         }
